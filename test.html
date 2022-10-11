@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .main-card {
+        max-width: 650px;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 25px 25px 0;
+        font-family: "Lato", sans-serif;
+      }
+      .current-day {
+        font-size: 24px;
+        text-align: right;
+      }
+
+      .current-location {
+        font-weight: 700;
+      }
+      .temperature-card {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1;
+      }
+      .current-temperature {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .current-image {
+        text-align: left;
+        display: inline;
+      }
+      .current-temperature-value {
+        font-size: 38px;
+        font-weight: 700;
+        display: inline;
+        padding: 0 0 0 20px;
+      }
+      .celsius-degrees,
+      .fahrenheit-degrees,
+      .line {
+        font-size: 18px;
+        position: relative;
+        top: -14px;
+        text-decoration: none;
+        color: black;
+      }
+      .celsius-degrees:hover,
+      .fahrenheit-degrees:hover {
+        text-decoration: underline;
+        color: black;
+      }
+
+      .current-description {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: right;
+      }
+    </style>
+    <div class="container">
+      <div class="card main-card shadow">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <h1 class="current-location" id="current-city">Kharkiv</h1>
+            </div>
+            <div class="col">
+              <p class="current-day" id="current-day">Thuesday, Sep 08</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6"><h2 class="current-location">Ukraine</h2></div>
+            <div class="col">
+              <div class="card temperature-card shadow-sm">
+                <div class="card-body">
+                  <div class="current-temperature">
+                    <div class="current-image">
+                      <img src="img/sun.png" alt="Sun" width="70px" />
+                    </div>
+                    <div class="current-temperature-value">18</div>
+                    <a href="#" class="celsius-degrees">°C</a>
+                    <span class="line">|</span>
+                    <a href="#" class="fahrenheit-degrees">°F</a>
+                    <div class="current-description">Mostly sunny</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
