@@ -58,7 +58,7 @@ function showTemperature(response) {
     response.data.wind.speed
   )}`;
   document.querySelector("#current-description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].main.description;
 
   let regionNamesInEnglish = new Intl.DisplayNames(["en"], {
     type: "region",
